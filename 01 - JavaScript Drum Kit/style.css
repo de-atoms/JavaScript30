@@ -11,12 +11,35 @@ html {
   font-family: sans-serif;
 }
 
-.keys {
+.notice {
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+}
+
+.notice h1 {
+  font-size: 3rem;
+}
+
+.notice p {
+  font-size: 1.5rem;
+}
+
+.drumkit {
   display: flex;
-  flex: 1;
   min-height: 100vh;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.keys {
+  display: flex;
+  /* flex: 1; */
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .key {
@@ -55,10 +78,7 @@ kbd {
   .keys {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     min-height: auto;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
